@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+* {
+    margin: auto auto auto auto;
+    font-family: 'Bad Script', cursive;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    color: white;
+}
+h2 {
+    font-size: 4em;
+    color: #3f0e42;
+    text-transform: uppercase;
+    margin-top: 35px;
+    text-align: center;
+    -webkit-box-reflect:below -15px linear-gradient(transparent, #0004);
+}
+
+body {
+    background-color: #2b072d;
+}
+
+h2 span {
+    animation: animate 5s linear infinite;
+ }
+
+@keyframes animate {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #420e32;
+        text-shadow: none;
+    }
+
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #f403e0, 0 0 20px #f4038c, 0 0 40px #dc03f4, 0 0 80px #f403b4, 0 0 160px #9c03f4, 0 0 400px #f4037b;
+    }
+}
+h2 span:nth-child(even){
+    animation-delay: 0.4s
+}
+.body img{
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+}
+.congrats{
+    display: flex;
+    flex-direction: row;
+}
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.congrats p{
+    font-size: 25px;
+    margin-left: 50px;
+}
+.picture{
+    width: 100%;
+}
+.picture img{
+    width: 100%;
+}
+.body{
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.bottom h2{
+    font-size: 50px;
+}
+.pictures{
+    width: 900px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    margin-top: 100px;
+}
+.items-row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.img1{
+    background-image: url(img/фотка\ 1.jpg);
+}
+.img2{
+    background-image: url(img/фотка\ 2.jpg);
+}
+.img3{
+    background-image: url(img/фотка\ 3.jpg);
+}
+.img4{
+    background-image: url(img/фотка\ 4.jpg);
+}
+.img5{
+    background-image: url(img/фотка\ 5.jpg);
+}
+.img6{
+    background-image: url(img/фотка\ 6.jpg);
+}
+.item{
+    background-repeat: no-repeat;
+    margin: 2px;
+    border: 1px solid grey;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    flex: 1 1 20%;
+    transition: flex 0.4s ease;
+}
+.item:hover{
+    flex: 0.01 45%;
+}
+@media (max-width: 1399.98px) { 
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
+    .picture img{
+        width: 100%;
+    }
+}
+@media (max-width: 421.98px) {
+    .pictures{
+        width: 90%;
+    }
+    .congrats{
+        flex-direction: column;
+    }
+    .congrats p{
+        margin: 0;
+    }
+
+}
